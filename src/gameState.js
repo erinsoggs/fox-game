@@ -1,4 +1,4 @@
-import { modFox, modScene, togglePoopBa, writeModal } from "./ui";
+import { modFox, modScene, togglePoopBag, writeModal } from "./ui";
 import { RAIN_CHANCE, SCENES, DAY_LENGTH, NIGHT_LENGTH, getNextDieTime, getNextHungerTime, getNextPoopTime } from './constants'
 
 const gameState = {
@@ -111,7 +111,7 @@ const gameState = {
       return;
     }
     if (this.current === "INIT" || this.current === "DEAD") {
-      this.gameState();
+      this.startGame();
       return;
     }
     switch (icon) {
